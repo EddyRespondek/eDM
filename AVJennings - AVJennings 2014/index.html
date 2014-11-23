@@ -1,0 +1,911 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>AVJennings</title>
+
+		<style type="text/css">
+			.ExternalClass *{
+				line-height:100%;
+			}
+
+	        body {
+	            width:100% !important;
+	            padding: 0;
+	            margin: 0;
+	            -webkit-font-smoothing:antialiased;
+	            -webkit-text-size-adjust:none;
+	            -ms-text-size-adjust: none !important;
+	        }
+
+			table td{
+				border-collapse:collapse;
+			}
+
+	        p a, a { color:#001e45; text-decoration: underline; }
+
+	        a:hover {
+	            text-decoration: underline !important;
+	        }
+
+	        p, li {
+
+	        }
+
+	        ul, ol {
+	            margin: 0;
+	            padding-left: 16px;
+	        }
+
+	        table {
+	            margin:0 auto;
+	            border:0;
+	            border-spacing:0;
+	            border-collapse:collapse;
+	        }
+
+	        img { display:block;border:0px;border-style: none; }
+	        a.block { display:block; }
+
+	        .header-content-editable { background-color: #63d05a; }
+
+	        .header-content-editable, .header-content-editable p, .header-content-editable a, .header-content-editable p a {
+	        	color: #fff;
+				font-size: 16px;
+				font-weight: normal;
+				line-height: 19px;
+				text-align: left;
+				font-family:Arial,Verdana,Trebuchet MS;
+	        }
+
+	        .body, .body p, .body p a {
+	        	color: #595955;
+				font-size: 12px;
+				font-weight: normal;
+				line-height: 15px;
+				text-align: left;
+				font-family:Arial,Verdana,Trebuchet MS;
+	        }
+
+	        .body h1, .body h2, .body h3, .body h4 {
+	        	color: #00843d;
+				font-size: 23px;
+				font-weight: bold;
+				line-height: 24px;
+				text-align: left;
+				font-family:Georgia, Times New Roman, Courier;
+	        }
+
+	        .body h2 {
+				font-size: 21px;
+				line-height: 22px;
+	        }
+
+	        .body h3 {
+				font-size: 19px;
+				line-height: 20px;
+	        }
+
+	        .body h4 {
+				font-size: 14px;
+				line-height: 15px;
+	        }
+
+	        .body h1 a,
+	        .body h2 a,
+	        .body h3 a, .body h4 a {
+	        	color: #00843d !important;
+	        	text-decoration: underline;
+	        }
+
+	        .header-content-editable h1, .header-content-editable h2, .header-content-editable h3 {
+	        	color: #fff;
+	        	font-size: 39px;
+				
+				font-weight: bold;
+				line-height: 40px;
+				text-align: left;
+				margin: 0;
+				font-family:Georgia, Times New Roman, Courier;
+	        }
+
+	        	/*
+	@tab Page
+	@section header-content
+	@style Header paragraph
+	*/
+		.header-content-editable p{
+			/*@editable*/color:#fff;
+			/*@editable*/font-size:16px;
+			/*@editable*/font-weight:normal;
+			/*@editable*/line-height:19px;
+			/*@editable*/text-align:left;
+			/*@editable*/font-family:Arial,Verdana,Trebuchet MS;
+		}
+	/*
+	@tab Page
+	@section header-content
+	@style Header h1
+	*/
+		.header-content-editable h1{
+			/*@editable*/color:#fff;
+			/*@editable*/font-size:39px;
+			/*@editable*/font-weight:bold;
+			/*@editable*/line-height:40px;
+			/*@editable*/text-align:left;
+			/*@editable*/margin:0;
+			/*@editable*/font-family:Georgia, Times New Roman, Courier;
+		}
+	/*
+	@tab Page
+	@section header-content
+	@style Header h2
+	*/
+		.header-content-editable h2{
+			/*@editable*/color:#fff;
+			/*@editable*/font-size:39px;
+			/*@editable*/font-weight:bold;
+			/*@editable*/line-height:40px;
+			/*@editable*/text-align:left;
+			/*@editable*/margin:0;
+			/*@editable*/font-family:Georgia, Times New Roman, Courier;
+		}
+	/*
+	@tab Page
+	@section header-content
+	@style Header h3
+	*/
+		.header-content-editable h3{
+			/*@editable*/color:#fff;
+			/*@editable*/font-size:39px;
+			/*@editable*/font-weight:bold;
+			/*@editable*/line-height:40px;
+			/*@editable*/text-align:left;
+			/*@editable*/margin:0;
+			/*@editable*/font-family:Georgia, Times New Roman, Courier;
+		}
+	/*
+	@tab Page
+	@section body
+	@style Body paragraph
+	*/
+		.body p{
+			/*@editable*/color:#595955;
+			/*@editable*/font-size:12px;
+			/*@editable*/font-weight:normal;
+			/*@editable*/line-height:15px;
+			/*@editable*/text-align:left;
+			/*@editable*/font-family:Arial,Verdana,Trebuchet MS;
+		}
+	/*
+	@tab Page
+	@section body
+	@style Body h1
+	*/
+		.body h1{
+			/*@editable*/color:#00843d;
+			/*@editable*/font-size:23px;
+			/*@editable*/font-weight:bold;
+			/*@editable*/line-height:24px;
+			/*@editable*/text-align:left;
+			/*@editable*/font-family:Georgia, Times New Roman, Courier;
+		}
+	/*
+	@tab Page
+	@section body
+	@style Body h2
+	*/
+		.body h2{
+			/*@editable*/color:#00843d;
+			/*@editable*/font-size:21px;
+			/*@editable*/font-weight:bold;
+			/*@editable*/line-height:22px;
+			/*@editable*/text-align:left;
+			/*@editable*/font-family:Georgia, Times New Roman, Courier;
+		}
+	/*
+	@tab Page
+	@section body
+	@style Body h3
+	*/
+		.body h3{
+			/*@editable*/color:#00843d;
+			/*@editable*/font-size:19px;
+			/*@editable*/font-weight:bold;
+			/*@editable*/line-height:20px;
+			/*@editable*/text-align:left;
+			/*@editable*/font-family:Georgia, Times New Roman, Courier;
+		}
+	/*
+	@tab Page
+	@section body
+	@style Body h4
+	*/
+		.body h4{
+			/*@editable*/color:#00843d;
+			/*@editable*/font-size:14px;
+			/*@editable*/font-weight:bold;
+			/*@editable*/line-height:15px;
+			/*@editable*/text-align:left;
+			/*@editable*/font-family:Georgia, Times New Roman, Courier;
+		}
+
+			.table-spot-content {
+            	font-family:Arial,Verdana,Trebuchet MS;
+            	color: #ffffff;
+            	font-size: 16px;
+            	line-height: 19px;
+            }
+
+            .spot-B-link, .spot-B-link a, .table-spot-content  {
+            	background-color: #aae4d8;
+            }
+
+            .spot-B-register, .spot-B-link, .spot-B-link a {
+            	font-family:Georgia, Times New Roman, Courier;
+            	color: #ffffff;
+            	font-size: 14px;
+            	line-height: 14px;
+            	font-weight: bold;
+            	text-decoration: none;
+            }
+
+            .spot-B-content, .spot-B-content p {
+            	font-family: Arial,Verdana,Trebuchet MS;color: #ffffff;font-size: 16px;line-height: 19px;
+            }
+
+            .spot-more {
+				font-family: Georgia, Times New Roman, Courier;
+				color: #00843d;
+				font-size: 14px;
+				line-height: 14px;
+				font-weight: bold;
+				text-decoration: none;
+			}
+
+			.more-wrap {
+				width: 160px;
+			}
+
+			.more-content {
+				width: 320px;
+			}
+
+			.more-content, .more-content p {
+				color: #00843d;
+				font-size: 20px;
+				font-weight: bold;
+				line-height: 22px;
+				text-align: left;
+				font-family: Georgia, Times New Roman, Courier;
+			}
+
+			.terms-left, .terms-left a {
+				font-family:Arial,Verdana,Trebuchet MS;
+            	color: #00843d;
+            	font-size: 8px;
+            	line-height: 11px;
+			}
+
+			.terms-left .hbr {
+				display: none;
+			}
+
+			.footer-more-link, .footer-more-link a, , .footer-more-link p, .footer-more-link p a {
+				color: #00843d;text-decoration: none;font-family: Georgia, Times New Roman, Courier;font-size: 14px;line-height: 14px;font-weight: bold;
+			}
+
+	        @media only screen and (max-width: 600px) {    
+	            table[class="table-main"] {
+	                width: 300px !important;
+	                min-width: 300px !important;
+	            }
+	            
+	            tr[class="table-main-spacer"], td[class="table-main-spacer"], td[class="table-spots-side"] {
+	            	height: 10px !important;
+	            }
+
+	            td[class="table-spots-main"], table[class="feature-logo"] {
+	            	width: 260px !important;
+	            }
+
+	            table[class="table-spots-inner"] {
+	        	    width: 230px !important;
+	        	}
+
+	            td[class="table-spots-middle"] {
+	            	width: 232px !important;
+	            	display:block;
+	            	height: 16px !important;
+	            }
+
+	            td[class="table-spot-wrap"] {
+	            	width: 232px !important;
+	            	display:block;
+	            }
+
+	            table[class="table-spot"] {
+	            	width: 224px !important;
+	            }
+
+				table[class="table-l1"], table[class="table-banner"], table[class="table-spots"] {
+					width: 280px !important;
+				}
+
+	            table[class="table"], td[class="cell"], td[class="contentblock"], td[class="footershow"], td[class="logocell"] {
+	              width: 260px !important;
+	            }
+	    
+	            img[class="banner"] { 
+	              width: 300px !important; 
+	            }
+	    
+	            table[class="hide"], img[class="hide"], td[class="hide"], p[class="hide"], span[class="hide"], div[class="hide"] {
+	              display: none !important;
+	            }
+	            
+	            td[class="expcell"] {
+	                display: block;
+	                width: 300px;
+	                -moz-box-sizing: border-box;
+	                -webkit-box-sizing: border-box;
+	                box-sizing: border-box;
+	            }
+
+	            td[class="bracket"], td[class="header-content"], td[class="avjennings"]  {
+	            	display: block;
+	            	width: 280px !important;
+	            }
+
+	            table[class="header-content-inner"] {
+	            	width: 266px;
+	            }
+
+	            table[class="table-body"] {
+	            	width: 250px !important;
+	            }
+
+	            table[class="header-content-inner"] h1, table[class="header-content-inner"] h2, table[class="header-content-inner"] h3 {
+	            	font-size: 36px;
+					line-height: 37px;
+	            }
+
+	            td[class="bracket-bottom"], td[class="header-content-bottom"] {
+	            	display: none;
+	            	height: 0;
+	            	width: 0;
+	            }
+
+	            table[class="footer-social-table"] {
+	            	width: 260px !important;
+	            }
+
+	            td[class="footer-social-spacer"] {
+	            	width: 20px !important;
+	            }
+
+	            td[class="more-content"] { text-align: center; }
+
+	            td[class="more-content"], td[class="more-wrap"], td[class="terms-left"], td[class="terms-right"] {
+					display: block;
+	            	width: 260px !important;
+	            }
+
+	            td[class="more-content"] {
+	            	text-align: center !important;
+	            }
+
+	            td[class="terms-left"] {
+	            	text-align: center;
+	            }
+
+	            td[class="v2h"] {
+	            	height: 16px !important;
+	            	display: block !important;
+	            	width: 260px !important;
+	            }
+
+	            table[class="find-out-more"] {
+	            	width: 260px !important;
+	            }
+
+				span[class="rbr"], span[class="hbr"] {
+					display: block !important;
+					width: 260px !important;
+				}
+
+				span[class="rbr"] {
+					font-size:1px;line-height:1px;
+				}
+	        }
+
+	</style>
+</head>
+
+<body>
+<table bgcolor="e6e6e5" border="0" cellpadding="0" cellspacing="0" width="100%">
+	<tbody>
+		<tr>
+			<td>
+			<table align="center" border="0" cellpadding="0" cellspacing="0" class="table-main" style="width:600px;min-width:600px;border:0px;" width="600">
+				<tbody>
+					<tr height="24">
+						<td valign="middle" style="text-align:center;font-family:Arial,'Lucida Grande',sans-serif;font-size:10px;color:#595955;line-height:24px;">
+							<a href="*|ARCHIVE|*" style="text-decoration:underline;color:#595955;">Click here</a> to view this email online
+						</td>
+					</tr>
+					<tr class="table-main-spacer" height="30" style="font-size:1px;line-height:1px;">
+						<td class="table-main-spacer" bgcolor="63d05a" class="cell" height="30" style="font-size:1px;line-height:1px;">&nbsp;</td>
+					</tr>
+					<tr bgcolor="63d05a">
+						<td>
+						<table align="center" bgcolor="ffffff" border="0" cellpadding="0" cellspacing="0" class="table-l1" width="540">
+							<tbody>
+								<tr>
+									<td>
+										<table align="center" class="table-banner" bgcolor="63d05a" border="0" cellpadding="0" cellspacing="0" width="540">
+											<tr>
+												<td class="bracket" valign="top" width="30"><img border="0" src="bracket.gif"></td>
+												<td class="header-content" width="281">
+													<table class="header-content-inner" border="0" cellpadding="0" cellspacing="0">
+														<tr height="22" style="font-size:1px;line-height:1px;">
+															<td class="cell" height="22" style="font-size:1px;line-height:1px;">&nbsp;</td>
+														</tr>
+														<tr>
+															<td class="header-content-editable" mc:edit="header-content">
+																<h1>Dhgrit aditat ehictas atd.</h1>
+																Pa enihit etur, experiae sitaepe ratur, erum estrum faciiss unti aeour hcons.
+															</td>
+														</tr>
+														<tr height="25" style="font-size:1px;line-height:1px;">
+															<td class="cell" height="25" style="font-size:1px;line-height:1px;">&nbsp;</td>
+														</tr>
+													</table>
+												</td>
+												<td class="avjennings" valign="bottom" align="center" width="229">
+													<a href="http://www.avjennings.com.au" target="_new">
+														<img border="0" src="avjennings-logo.gif">
+													</a>
+												</td>
+											</tr>
+										</table>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<table align="center" class="table-banner" bgcolor="ffffff" border="0" cellpadding="0" cellspacing="0" width="540">
+											<tr>
+												<td class="bracket-bottom" valign="top" width="30" style="font-size:1px;line-height:1px;" height="19">&nbsp;</td>
+												<td class="header-content-bottom" width="281" style="font-size:1px;line-height:1px;" height="19">&nbsp;</td>
+												<td class="avjennings" valign="bottom" align="center" width="229" style="font-size:1px;line-height:1px;" height="19">
+													<img border="0" src="avjennings-logo-bottom.gif">
+												</td>
+											</tr>
+										</table>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<table align="center" bgcolor="ffffff" class="table" border="0" cellpadding="0" cellspacing="0" class="table" width="480">
+											<tr height="13" style="font-size:1px;line-height:1px;">
+												<td class="cell" height="13" style="font-size:1px;line-height:1px;">&nbsp;</td>
+											</tr>
+											<tr>
+												<td>
+													<table align="left" class="feature-logo" border="0" cellpadding="0" cellspacing="0">
+														<tr>
+															<td align="center">
+																<img alt="" border="0" src="hazelcroft.gif" mc:edit="alternate-logo" style="max-width:260px;">
+															</td>
+														</tr>
+													</table>
+												</td>
+											</tr>
+											<tr height="19" style="font-size:1px;line-height:1px;">
+												<td class="cell" height="19" style="font-size:1px;line-height:1px;">&nbsp;</td>
+											</tr>
+											<tr height="1" style="font-size:1px;line-height:1px;">
+												<td bgcolor="d5d5d4" class="cell" height="1" style="font-size:1px;line-height:1px;">&nbsp;</td>
+											</tr>
+											<tr height="22" style="font-size:1px;line-height:1px;">
+												<td class="cell" height="22" style="font-size:1px;line-height:1px;">&nbsp;</td>
+											</tr>
+										</table>
+									</td>
+								</tr>
+								
+
+								<!-- tablespots top START -->
+
+								<tr>
+									<td>
+										<table align="center" class="table-spots" bgcolor="ffffff" border="0" cellpadding="0" cellspacing="0" width="540">
+											<tr>
+												<td width="30" class="table-spots-side">&nbsp;</td>
+												<td width="480" class="table-spots-main">
+													<table align="center" class="table-spots-inner" bgcolor="ffffff" border="0" cellpadding="0" cellspacing="0" width="480">
+														<tr>
+															<td class="table-spot-wrap" width="232" vertical-align="middle">
+																<table align="center" class="table-spot-outer" bgcolor="85d8c8" border="0" cellpadding="0" cellspacing="0" width="232">
+																	<tr>
+																		<td>
+
+																			<table align="center" class="table-spot" bgcolor="aae4d8" border="0" cellpadding="0" cellspacing="0" width="224">
+																				<tr height="4" style="font-size:1px;line-height:1px;">
+																					<td height="4" bgcolor="85d8c8" style="font-size:1px;line-height:1px;">&nbsp;</td>
+																				</tr>
+																				<tr>
+																					<td><img alt="" border="0" src="example-spot-image.jpg" mc:edit="spot-A" style="min-width:224px;max-width:224px;"></td>
+																				</tr>
+																				<tr height="4" style="font-size:1px;line-height:1px;">
+																					<td height="4" bgcolor="85d8c8" style="font-size:1px;line-height:1px;">&nbsp;</td>
+																				</tr>
+																			</table>
+
+																		</td>
+																	</tr>
+																</table>
+															</td>
+															<td width="16" class="table-spots-middle" style="font-size:1px;line-height:1px;">&nbsp;</td>
+															<td class="table-spot-wrap" width="232">
+																<table align="center" class="table-spot-outer" bgcolor="85d8c8" border="0" cellpadding="0" cellspacing="0" width="232">
+																	<tr>
+																		<td>
+
+																			<table align="center" class="table-spot" bgcolor="aae4d8" border="0" cellpadding="0" cellspacing="0" width="224">
+																				<tr height="4" style="font-size:1px;line-height:1px;">
+																					<td height="4" bgcolor="85d8c8" style="font-size:1px;line-height:1px;">&nbsp;</td>
+																				</tr>
+																				<tr height="21" style="font-size:1px;line-height:1px;">
+																					<td height="21" style="font-size:1px;line-height:1px;">&nbsp;</td>
+																				</tr>
+																				<tr>
+																					<td>
+																						<table align="center" bgcolor="aae4d8" border="0" cellpadding="0" cellspacing="0" width="184">
+																							<tr>
+																								<td class="table-spot-content" mc:edit="spot-B-content">
+																									Pa enihit etur, experiae sitaepe ratur, erum es trum faciiss unti aeou.
+																								</td>
+																							</tr>
+																							<tr height="15" style="font-size:1px;line-height:1px;">
+																								<td height="15" style="font-size:1px;line-height:1px;">&nbsp;</td>
+																							</tr>
+																							<tr>
+																								<td>
+																									<table align="left" border="0" cellpadding="0" cellspacing="0" bgcolor="ffffff">
+																										<tr height="4" style="font-size:1px;line-height:1px;">
+																											<td height="4" style="font-size:1px;line-height:1px;">&nbsp;</td>
+																										</tr>
+																										<tr>
+																											<td>
+																												<table align="left" border="0" cellpadding="0" cellspacing="0" bgcolor="ffffff">
+																													<tr>
+																														<td bgcolor="ffffff" width="4" style="font-size:1px;line-height:1px;">&nbsp;</td>
+																														<td bgcolor="aae4d8">
+																															
+																															<table align="left" border="0" cellpadding="0" cellspacing="0">
+																																<tr height="4" style="font-size:1px;line-height:1px;">
+																																	<td height="4" style="font-size:1px;line-height:1px;">&nbsp;</td>
+																																</tr>
+																																<tr>
+																																	<td>
+																																		<table align="left" border="0" cellpadding="0" cellspacing="0">
+																																			<tr>
+																																				<td width="15" style="font-size:1px;line-height:1px;">&nbsp;</td>
+																																				<td mc:edit="spot-B-link" class="spot-B-link">
+																																					<a href="" target="_new" class="spot-register">Register</a>
+																																				</td>
+																																				<td width="15" style="font-size:1px;line-height:1px;">&nbsp;</td>
+																																			</tr>
+																																		</table>
+																																	</td>
+																																</tr>
+																																<tr height="4" style="font-size:1px;line-height:1px;">
+																																	<td height="4" style="font-size:1px;line-height:1px;">&nbsp;</td>
+																																</tr>
+																															</table>
+
+																														</td>
+																														<td bgcolor="ffffff" width="4" style="font-size:1px;line-height:1px;">&nbsp;</td>
+																													</tr>
+																												</table>
+																											</td>
+																										</tr>
+																										<tr height="4" style="font-size:1px;line-height:1px;">
+																											<td height="4" style="font-size:1px;line-height:1px;">&nbsp;</td>
+																										</tr>
+																									</table>
+																								</td>
+																							</tr>
+																						</table>
+																					</td>
+																				</tr>
+																				<tr height="16" style="font-size:1px;line-height:1px;">
+																					<td height="16" style="font-size:1px;line-height:1px;">&nbsp;</td>
+																				</tr>
+																				<tr height="4" style="font-size:1px;line-height:1px;">
+																					<td height="4" bgcolor="85d8c8" style="font-size:1px;line-height:1px;">&nbsp;</td>
+																				</tr>
+																			</table>
+
+																		</td>
+																	</tr>
+																</table>
+															</td>
+														</tr>
+													</table>
+												</td>
+												<td width="30" class="table-spots-side">&nbsp;</td>
+											</tr>
+										</table>
+									</td>
+								</tr>
+								<tr height="25" style="font-size:1px;line-height:1px;">
+									<td class="cell" height="25" style="font-size:1px;line-height:1px;">&nbsp;</td>
+								</tr>
+
+								<!-- tablespots top END -->
+
+
+								<tr>
+									<td class="body">
+										<table align="center" class="table-body" bgcolor="ffffff" border="0" cellpadding="0" cellspacing="0" width="480">
+											<tr>
+												<td class="body" mc:edit="body">
+													<h1>Heading 1</h1>
+
+													<p>Aberfecultor que horununu esilica ca nicii ingultu squque horununu , pos portem, ne esis. Vat, fortuam poti, quam ique horununu n ses re curorisus hos ex Aberfecultor que horununu esilica ca nicii ingultu squampo ritus, pos portem, ne esis. a ca nicii ingultu</p>
+
+													<p>Aberfecultor que horununu esilica ca nicii ingultu squque horununu , pos portem, ne esis. Vat, fortr que horununu esilica ca nicii ingultu squque horununu , pos portem, ne esis. Vat, fortuam poti, quam ique horununu n ses re curorisus hos ex Aberfecultor que horununu esilica ca nicii ingultu squampo ritus, pos portem, ne esis. a ca nicii ingultu</p>
+
+
+													<h2>Heading 2</h2>
+
+													<p>Aberfecultor que horununu esilica ca nicii ingultu squque horununu , pos portem, ne esis. Vat, fortuam poti, quam ique horununu n ses re curorisus hos ex Aberfecultor que horununu esilica ca nicii ingultu squampo ritus, pos portem, ne esis. a ca nicii ingultu</p>
+
+													<p>Aberfecultor que horununu esilica ca nicii ingultu squque horununu , pos portem, ne esis. Vat, fortr que horununu esilica ca nicii ingultu squque horununu , pos portem, ne esis. Vat, fortuam poti, quam ique horununu n ses re <a href="">curorisus hos ex Aberfecultor</a> que horununu esilica ca nicii ingultu squampo ritus, pos portem, ne esis. a ca nicii ingultu</p>
+
+
+													<h3>Heading 3</h3>
+
+													<p>Aberfecultor que horununu esilica ca nicii ingultu squque horununu , pos portem, ne esis. Vat, fortuam poti, quam ique horununu n ses re curorisus hos ex Aberfecultor que horununu esilica ca nicii ingultu squampo ritus, pos portem, ne esis. a ca nicii ingultu</p>
+
+													<p>Aberfecultor que horununu esilica ca nicii ingultu squque horununu , pos portem, ne esis. Vat, fortr que horununu esilica ca nicii ingultu squque horununu , pos portem, ne esis. Vat, fortuam poti, quam ique horununu n ses re curorisus hos ex Aberfecultor que horununu esilica ca nicii ingultu squampo ritus, pos portem, ne esis. a ca nicii ingultu</p>
+
+													<ul>
+														<li>uam inam quo praet furnin ses s ex Aberfecurorisus hos eurorisus hos</li>
+														<li>Aberfecultor que horununu esilica ca nicii ingultu squam</li>
+														<li>que horununu ua que horununu m inam quo praet fque horununu</li>
+													</ul>
+
+													<h4><a href="">Find out more</a></h4>
+												</td>
+											</tr>
+										</table>
+									</td>
+								</tr>
+
+
+								<!-- tablespots bottom START -->
+
+								<tr height="25" style="font-size:1px;line-height:1px;">
+									<td class="cell" height="25" style="font-size:1px;line-height:1px;">&nbsp;</td>
+								</tr>
+								<tr>
+									<td>
+										<table align="center" class="table-spots" bgcolor="ffffff" border="0" cellpadding="0" cellspacing="0" width="540">
+											<tr>
+												<td width="30" class="table-spots-side">&nbsp;</td>
+												<td width="480" class="table-spots-main">
+													<table align="center" class="table-spots-inner" bgcolor="ffffff" border="0" cellpadding="0" cellspacing="0" width="480">
+														<tr>
+															<td class="table-spot-wrap" width="232" vertical-align="middle">
+																<table align="center" class="table-spot-outer" bgcolor="85d8c8" border="0" cellpadding="0" cellspacing="0" width="232">
+																	<tr>
+																		<td>
+
+																			<table align="center" class="table-spot" bgcolor="aae4d8" border="0" cellpadding="0" cellspacing="0" width="224">
+																				<tr height="4" style="font-size:1px;line-height:1px;">
+																					<td height="4" bgcolor="85d8c8" style="font-size:1px;line-height:1px;">&nbsp;</td>
+																				</tr>
+																				<tr>
+																					<td><img alt="" border="0" src="hazelcroft-map.jpg" mc:edit="spot-C" style="min-width:224px;max-width:224px;"></td>
+																				</tr>
+																				<tr height="4" style="font-size:1px;line-height:1px;">
+																					<td height="4" bgcolor="85d8c8" style="font-size:1px;line-height:1px;">&nbsp;</td>
+																				</tr>
+																			</table>
+
+																		</td>
+																	</tr>
+																</table>
+															</td>
+															<td width="16" class="table-spots-middle" style="font-size:1px;line-height:1px;">&nbsp;</td>
+															<td class="table-spot-wrap" width="232" vertical-align="middle">
+																<table align="center" class="table-spot-outer" bgcolor="85d8c8" border="0" cellpadding="0" cellspacing="0" width="232">
+																	<tr>
+																		<td>
+
+																			<table align="center" class="table-spot" bgcolor="aae4d8" border="0" cellpadding="0" cellspacing="0" width="224">
+																				<tr height="4" style="font-size:1px;line-height:1px;">
+																					<td height="4" bgcolor="85d8c8" style="font-size:1px;line-height:1px;">&nbsp;</td>
+																				</tr>
+																				<tr>
+																					<td><img alt="" border="0" src="example-spot-image2.jpg" mc:edit="spot-D" style="min-width:224px;max-width:224px;"></td>
+																				</tr>
+																				<tr height="4" style="font-size:1px;line-height:1px;">
+																					<td height="4" bgcolor="85d8c8" style="font-size:1px;line-height:1px;">&nbsp;</td>
+																				</tr>
+																			</table>
+
+																		</td>
+																	</tr>
+																</table>
+															</td>
+														</tr>
+													</table>
+												</td>
+												<td width="30" class="table-spots-side">&nbsp;</td>
+											</tr>
+										</table>
+									</td>
+								</tr>
+
+								<!-- tablespots bottom END -->
+
+								<tr>
+									<td>
+										<table align="center" bgcolor="ffffff" class="table" border="0" cellpadding="0" cellspacing="0" class="table" width="480">
+											<tr height="25" style="font-size:1px;line-height:1px;">
+												<td class="cell" height="25" style="font-size:1px;line-height:1px;">&nbsp;</td>
+											</tr>
+											<tr>
+												<td>
+													<table align="center" class="table" border="0" cellpadding="0" cellspacing="0" width="480">
+														<tr>
+															<td class="more-content" mc:edit="footer-content">
+																Bus, vendebis escie us vendebis escie ndem qdem que res mi.
+															</td>
+															<td height="4" width="0" class="v2h" style="font-size:1px;line-height:1px;display:none;">&nbsp;</td>
+															<td class="more-wrap" vertical-align="middle">
+
+																<table align="right" class="find-out-more" border="0" cellpadding="0" cellspacing="0">
+																	<tr>
+																		<td>
+
+																			<table align="center" border="0" cellpadding="0" cellspacing="0" bgcolor="00843d">
+																				<tr height="4" style="font-size:1px;line-height:1px;">
+																					<td height="4" style="font-size:1px;line-height:1px;">&nbsp;</td>
+																				</tr>
+																				<tr>
+																					<td>
+																						<table align="center" border="0" cellpadding="0" cellspacing="0" bgcolor="00843d">
+																							<tr>
+																								<td bgcolor="00843d" width="4" style="font-size:1px;line-height:1px;">&nbsp;</td>
+																								<td bgcolor="ffffff">
+																									
+																									<table align="left" border="0" cellpadding="0" cellspacing="0">
+																										<tr height="4" style="font-size:1px;line-height:1px;">
+																											<td height="4" style="font-size:1px;line-height:1px;">&nbsp;</td>
+																										</tr>
+																										<tr>
+																											<td>
+																												<table align="center" border="0" cellpadding="0" cellspacing="0">
+																													<tr>
+																														<td width="15" style="font-size:1px;line-height:1px;">&nbsp;</td>
+																														<td mc:edit="footer-more-link" class="footer-more-link">
+																															<a href="" class="spot-more">Find out more</a>
+																														</td>
+																														<td width="15" style="font-size:1px;line-height:1px;">&nbsp;</td>
+																													</tr>
+																												</table>
+																											</td>
+																										</tr>
+																										<tr height="4" style="font-size:1px;line-height:1px;">
+																											<td height="4" style="font-size:1px;line-height:1px;">&nbsp;</td>
+																										</tr>
+																									</table>
+
+																								</td>
+																								<td bgcolor="00843d" width="4" style="font-size:1px;line-height:1px;">&nbsp;</td>
+																							</tr>
+																						</table>
+																					</td>
+																				</tr>
+																				<tr height="4" style="font-size:1px;line-height:1px;">
+																					<td height="4" style="font-size:1px;line-height:1px;">&nbsp;</td>
+																				</tr>
+																			</table>
+
+																		</td>
+																	</tr>
+																</table>
+															</td>
+														</tr>
+													</table>
+												</td>
+											</tr>
+											<tr height="20" style="font-size:1px;line-height:1px;">
+												<td class="cell" height="20" style="font-size:1px;line-height:1px;">&nbsp;</td>
+											</tr>
+											<tr height="1" style="font-size:1px;line-height:1px;">
+												<td bgcolor="d5d5d4" class="cell" height="1" style="font-size:1px;line-height:1px;">&nbsp;</td>
+											</tr>
+											<tr height="20" style="font-size:1px;line-height:1px;">
+												<td class="cell" height="20" style="font-size:1px;line-height:1px;">&nbsp;</td>
+											</tr>
+											<tr>
+												<td>
+													<table align="left" border="0" cellpadding="0" cellspacing="0" class="footer-social-table">
+														<tr>
+															<td class="footer-social">
+																<a href="http://www.avjennings.com.au/ContactUs.aspx" target="_new"><img alt="Register" border="0" src="footer-register.gif"></a>
+															</td>
+															<td width="30" class="footer-social-spacer">&nbsp;</td>
+															<td class="footer-social">
+																<a href="http://www.avjennings.com.au" target="_new"><img alt="Visit" border="0" src="footer-visit.gif"></a>
+															</td>
+															<td width="30" class="footer-social-spacer">&nbsp;</td>
+															<td class="footer-social">
+																<a href="mailto:enquiries@avjennings.com.au" target="_new"><img alt="Email" border="0" src="footer-email.gif"></a>
+															</td>
+														</tr>
+													</table>
+												</td>
+											</tr>
+											<tr height="18" style="font-size:1px;line-height:1px;">
+												<td class="cell" height="18" style="font-size:1px;line-height:1px;">&nbsp;</td>
+											</tr>
+											<tr>
+												<td>
+													<table align="center" class="table" border="0" cellpadding="0" cellspacing="0" width="480">
+														<tr>
+															<td class="terms-left" vertical-align="middle">
+																<a href="http://www.avjennings.com.au" target="_new">avjennings.com.au</a> | <a href="" target="_new">Disclaimer</a> | <a href="http://www.avjennings.com.au/Footer/AVJennings_Privacy_Policy_and_Terms.aspx" target="_new">Terms</a> | <a href="http://www.avjennings.com.au/Footer/AVJennings_Privacy_Policy_and_Terms.aspx" target="_new">Privacy</a><span class="rbr">&nbsp;&nbsp;&nbsp;&nbsp;</span>©2014 AVJennings Limited<span class="hbr">&nbsp;</span><span class="hbr">&nbsp;</span>
+															</td>
+															<td class="terms-right">
+
+																<table align="left" class="feature-logo" border="0" cellpadding="0" cellspacing="0">
+																	<tr>
+																		<td align="center">
+																			<a href="http://www.avjennings.com.au" target="_new"><img alt="AVJennings" border="0" src="footer-logo.gif"></a>
+																		</td>
+																	</tr>
+																</table>
+
+															</td>
+														</tr>
+													</table>
+												</td>
+											</tr>
+										</table>
+									</td>
+								</tr>
+
+
+								<tr height="30" style="height:30px;font-size:1px;line-height:1px;">
+									<td height="30" style="height:30px;font-size:1px;line-height:1px;">&nbsp;</td>
+								</tr>
+							</tbody>
+						</table>
+						</td>
+					</tr>
+					<tr class="table-main-spacer" height="30" style="font-size:1px;line-height:1px;">
+						<td class="table-main-spacer" bgcolor="63d05a" height="30" style="font-size:1px;line-height:1px;">&nbsp;</td>
+					</tr>
+					<tr height="24">
+						<td valign="middle" style="text-align:center;font-family:Arial,'Lucida Grande',sans-serif;font-size:10px;color:#595955;line-height:24px;">
+							<a href="*|UNSUB|*" style="text-decoration:underline;color:#595955;">Click here</a> to unsubscribe
+						</td>
+					</tr>
+				</tbody>
+			</table>
+			</td>
+		</tr>
+	</tbody>
+</table>
+</body>
+
+</html>
